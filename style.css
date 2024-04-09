@@ -1,0 +1,355 @@
+*{
+ box-sizing: border-box;
+ margin: 0; 
+ padding: 0;
+}
+
+html , body{
+ height:100%;
+ width:100%;
+}
+
+.main{
+ width:100vw;
+ height:100vh;
+
+}
+.parent{
+ height:100%;
+ width:100%;
+ background-color: rgb(228, 210, 210);
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
+.Mainbox{
+    width: 90vw;
+    height: 95vh;
+    background-color: rgb(68, 55, 68);
+    border-radius: 26px;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+}
+.Mainbox::-webkit-scrollbar{
+    display: none;
+}
+.headbar{
+    height: 100px;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.leftBtns{
+    height: 100%;
+    width: 300px;
+    /* background-color: rgb(127, 133, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.leftBtns h1{
+    color: aliceblue;
+    font-family:cursive;
+    font-weight: bolder;
+}
+.lftbtns{
+    height: 31px;
+    width: 160px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    overflow: hidden;
+    background-color: rgba(240, 248, 255, 0.122);
+
+    /* justify-content: space-around; */
+}
+
+.btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 31px;
+    width: 93px;
+    border-radius: 60px;
+    background-color: aliceblue;
+}
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 31px;
+    width: 93px;
+    border-radius: 60px;
+    color: aliceblue;
+    /* background-color: rgba(240, 248, 255, 0.284); */
+}
+
+.rightBtns{
+    height: 100%;
+    width: 400px;
+    /* background-color: rgb(127, 255, 155); */
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   font-family: cursive;
+}
+
+.rightleftBtn{
+    height: 31px;
+    width: 260px;
+    /* background-color: yellowgreen; */
+    background-color: rgba(240, 248, 255, 0.122);
+
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    overflow: hidden;
+    color: aliceblue;
+    padding: 1em;
+    font-family: cursive;
+}
+.rightBtns .btn1{
+    height: 33px;
+    width:105px;
+    box-shadow: 0px 3px 11px 0px  rgba(239, 237, 237, 0.534);
+}
+
+@media screen and (max-width:700px) {
+    
+.headbar{
+    height: 60px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:0em 2em
+    
+}
+}
+.bodyContaner{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(126, 98, 3);
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 100px;
+    background-color: #fff;
+}
+.middle{
+    height: 100vh;
+    width: 700px;
+    background-color: salmon;
+}
+.middleTop{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.middleTopContaner{
+    width: 100%;
+    height: 100%;
+    background-color: #504b4b;
+    padding:0em .7em;
+}
+.cardsContaner{
+    width: 100%;
+    height: 260px;
+    background-color: yellowgreen;
+    display: flex;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+}
+.card{
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    margin-left: 2px;
+    border-radius: 30px;
+   
+}
+.card3, .card4{
+    rotate: -20deg;
+
+}
+.middleBottom{
+    height: 400px;
+    width: 100%;
+    background-color:green;
+}
+
+
+
+/* right  */
+
+.right{
+    height: 100%;
+    width: 600px;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.4em;
+}
+.displayImage{
+    height:  600px;
+    width: 340px;
+    /* background-color: #b11919; */
+    /* position: absolute; */
+    border-radius: 30px;
+    overflow: hidden;
+}
+.displaySongImage{
+    height: 610px;
+    width: 350px;
+    /* background-color: #ffffff61; */
+    border-radius: 30px;
+    position: absolute;
+}
+.topContaner{
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+.artistName{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    /* background-color: hotpink; */
+
+}
+.artistRight{
+    width: 100px;
+    /* background: #000; */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content:end;
+    
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.artistRight h3{
+    width: 40px;
+    height: 40px;
+    background-color: #be9a9a;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 8px;
+    /* overflow: hidden; */
+
+}
+
+.bottomContaner{
+    width: 100%;
+    height: 460px;
+    /* background-color: rgb(157, 9, 176); */
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.bottomChildConta{
+    width: 100%;
+}
+
+.buttms{
+    color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+.bt1{
+width: 80px;
+height: 40px;
+background-color: #000000a5;
+align-items: center;
+justify-content: space-evenly;
+display: flex;
+border-radius: 30px;
+}
+.bt2{
+width: 150px;
+height: 40px;
+background-color: #000000a5;
+align-items: center;
+justify-content: space-around;
+display: flex;
+border-radius: 30px;
+ 
+
+}
+.bt2 #som{
+    width: 37px;
+    height: 37px;
+    background-color: #504b4b;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.bt3{
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #422c2c;
+}
+.topCon{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(123, 255, 0); */
+    padding: 1.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bottomCon{
+    width: 100%;
+    height: 60px;
+    /* background-color: rgb(172, 125, 178); */
+}   
+
+@media screen and (max-width:700px) {
+
+    .Mainbox{
+        
+        /* overflow: hidden; */
+        overflow-y: scroll;
+    }
+    
+    .bodyContaner{
+        /* height: 100%;
+        width: 100%; */
+        /* background-color: rgb(126, 98, 3); */
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+    }
