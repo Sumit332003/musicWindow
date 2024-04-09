@@ -1,2 +1,2 @@
 ﻿# musicWindow
-i am working on that ui desigen.
+i am working on that ui design.
