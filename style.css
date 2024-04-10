@@ -7,6 +7,7 @@
 html , body{
  height:100%;
  width:100%;
+
 }
 
 .main{
@@ -33,6 +34,15 @@ html , body{
 .Mainbox::-webkit-scrollbar{
     display: none;
 }
+input{
+    width: 100vw;
+    height: 100vh;
+    background: #00000000;
+    border: transparent;
+    padding: 1em;
+
+}
+
 .headbar{
     height: 100px;
     width: 100%;
@@ -132,23 +142,42 @@ html , body{
 .bodyContaner{
     height: 90%;
     width: 100%;
-    background-color: rgb(126, 98, 3);
+    /* background-color: rgb(126, 98, 3); */
     display: flex;
+}
+
+@media screen and (max-width:1200px) {
+    
+    .main{
+       display: none;
+    }
+
+    
+
+}
+#down{
+    /* background-color: #fff; */
+ height: 60px; 
+    width: 60px;
+    mix-blend-mode: difference;
+    
 }
 .left{
     height: 100%;
     width: 100px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .middle{
     height: 100vh;
     width: 700px;
-    background-color: salmon;
+    color: #fff;
+    font-family:cursive;
+    /* background-color: salmon; */
 }
 .middleTop{
-    height: 300px;
+    height: 270px;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     align-items: center;
     justify-content: center;
     display: flex;
@@ -156,35 +185,122 @@ html , body{
 .middleTopContaner{
     width: 100%;
     height: 100%;
-    background-color: #504b4b;
-    padding:0em .7em;
+    /* background-color: #504b4b; */
+    /* padding:0em; */
+
 }
+/* .two{
+    background-color: #6b3b3b;
+
+} */
 .cardsContaner{
     width: 100%;
     height: 260px;
-    background-color: yellowgreen;
+    /* background-color: rgba(238, 240, 234, 0.085); */
     display: flex;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+    border-radius:30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
 }
+
 .card{
     width: 200px;
-    height: 100%;
+    height: 80%;
     background-color: #fff;
     margin-left: 2px;
     border-radius: 30px;
-   
+    background-image: url();
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+   overflow: hidden;
 }
-.card3, .card4{
+
+.card3{
     rotate: -20deg;
 
 }
 .middleBottom{
-    height: 400px;
+    height: 360px;
     width: 100%;
-    background-color:green;
+    /* background-color:green; */
+    /* padding:em; */
+    overflow: hidden;
+    padding-top: 1em;
+}
+.cardtwo{
+    height: 300px;
+    background-color: rgba(238, 240, 234, 0.085);
+    overflow: hidden;
+    margin-top: 10px;
+}
+.songContaner{
+    height:300px;
+    width: 100vw;
+    /* background-color: #fff; */
+    overflow: auto;
+
+}
+.songContaner::-webkit-scrollbar{
+    display: none;
 }
 
+.all_songs{
+ /* height: 100px; */
+ width: 100%;
+ /* background-color: red; */
+ /* margin-top: 30px; */
+ overflow: hidden;
+ padding: 1em;
 
+}
+.song-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top:1px solid  #fff;
+    padding: 10px 15px;
+     /* background-color: #007400; */
+   /* z-index: 999; */
+     /* height: 30px; */
+    /* width: 100%; */
+}  
+/* .songCardCover{
+    height: 300px;
+    width: 100%;
+    z-index: 1; */
+    /* margin: 10px;
+    background-color: #a12a2a;
+} */
+.song-card:hover{
+    background-color: #23232352;
+}
+.song-card:nth-last-child(1){
+    border-bottom: 1px solid #fff;
+}
+.song-card .part1{
+    display: flex;
+    align-items: center;
+
+}
+.song-card img{
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.song-card h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffffcb;
+}
+.song-card h6{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffffcb;
+}
 
 /* right  */
 
@@ -196,14 +312,20 @@ html , body{
     align-items: center;
     justify-content: center;
     padding-bottom: 1.4em;
+    padding-left: 9em;
+    
 }
 .displayImage{
-    height:  600px;
-    width: 340px;
+    height:  330px;
+    width: 350px;
+    background-image: url();
     /* background-color: #b11919; */
     /* position: absolute; */
-    border-radius: 30px;
-    overflow: hidden;
+    /* border-radius: 30px; */
+    /* overflow: hidden; */
+    object-fit: cover;
+    background-size: cover;
+    /* background-position: center; */
 }
 .displaySongImage{
     height: 610px;
@@ -211,11 +333,12 @@ html , body{
     /* background-color: #ffffff61; */
     border-radius: 30px;
     position: absolute;
+    overflow: hidden;
 }
 .topContaner{
     width: 100%;
     height: 150px;
-    /* background-color: red; */
+    background: #0000003c;
     display: flex;
     align-items:flex-start;
     justify-content: space-around;
@@ -241,9 +364,14 @@ html , body{
 .circle{
     width: 40px;
     height: 40px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 50%;
     overflow: hidden;
+    background-image: url();
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+
 }
 img{
     object-fit: cover;
@@ -253,7 +381,7 @@ img{
 .artistRight h3{
     width: 40px;
     height: 40px;
-    background-color: #be9a9a;
+    /* background-color: #be9a9a; */
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -275,6 +403,7 @@ img{
 }
 .bottomChildConta{
     width: 100%;
+    background: #0000003c;
 }
 
 .buttms{
@@ -283,7 +412,7 @@ img{
     justify-content: space-evenly;
     display: flex;
 }
-.bt1{
+.bt1 , .bt3{
 width: 80px;
 height: 40px;
 background-color: #000000a5;
@@ -312,7 +441,22 @@ border-radius: 30px;
     justify-content: center;
     display: flex;
 }
-.bt3{
+ .bt1:hover{
+    background-color: #00000086;
+    transform: scale(.9);
+    transition: .2s;
+}  
+.bt2:hover{
+    background-color: #00000086;
+    transform: scale(.9);
+    transition: .2s;
+}  
+.bt3:hover{
+    background-color: #00000086;
+    transform: scale(.9);
+    transition: .2s;
+}  
+/* .bt3{
     width: 40px;
     height: 40px;
     background-color: #ffffff;
@@ -321,7 +465,7 @@ border-radius: 30px;
     justify-content: center;
     display: flex;
     color: #422c2c;
-}
+} */
 .topCon{
     align-items: center;
     display: flex;
